@@ -1,0 +1,31 @@
+/**index.wxss**/
+
+.product-wrp {
+  padding: 0 20px;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.product-item {
+  margin-top: 10px;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.product-item .image-wrp {
+  width: 120px;
+  height: 120px;
+  background-color: #eee;
+}
+
+.product-item .image-wrp image {
+  width: 120px;
+  height: 120px;
+}
+
+.product-item .text-wrp {
+  width: 65%;
+  display: flex;
+  flex-flow: column nowrap;
+  margin-left: 20px;
+}
