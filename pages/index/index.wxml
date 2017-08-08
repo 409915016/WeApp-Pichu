@@ -6,7 +6,7 @@
 
     <view wx:for="{{products}}" class="product-item">
       <view class="image-wrp">
-        <image mode="{{item.mode}}" src="{{ item.imageUrl }}"></image>
+        <image src="{{ item.imageUrl }}"></image>
       </view>
 
       <view class="text-wrp">
