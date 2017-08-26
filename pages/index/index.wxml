@@ -1,23 +1,9 @@
 <!--index.wxml-->
-
-<view class="view—wrapper">
-  <text>商品列表</text>
-  <view class="product-wrp">
-
-    <view wx:for="{{products}}" class="product-item">
-      <view class="image-wrp">
-        <image mode="{{item.mode}}" src="{{ item.imageUrl }}"></image>
-      </view>
-
-      <view class="text-wrp">
-        <text class="product-name">{{ item.name }}</text>
-        <text class="product-price">价格 ￥{{ item.price }}</text>
-        <text class="product-description">{{ item.description }}</text>
-      </view>
-    </view>
-
-
+<import src="template.wxml" />
+<view class="container">
+<view class="products-wrp">
+  <view class="product-item" wx:for="{{products}}" wx:key="name">
+    <template is="product_item" data="{{...item}}"></template>
   </view>
-
-
+</view>
 </view>
