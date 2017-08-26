@@ -1,0 +1,10 @@
+<!-- template.wxml -->
+<template name="product_item">
+  <view class="image-wrp">
+    <image src="{{ imageUrl }}" mode="widthFix"></image>
+  </view>
+  <view class="text-wrp">
+    <text>type: {{ name }}</text>
+    <text>price: {{ price }}</text>
+  </view>
+</template>>

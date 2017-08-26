@@ -1,31 +1,24 @@
 /**index.wxss**/
-
-.product-wrp {
-  padding: 0 20px;
+.products-wrp {
   display: flex;
-  flex-flow: column nowrap;
+  flex-direction: column;
 }
 
 .product-item {
-  margin-top: 10px;
   display: flex;
-  flex-flow: row nowrap;
+  flex-direction: row;
 }
 
-.product-item .image-wrp {
-  width: 120px;
-  height: 120px;
-  background-color: #eee;
+.image-wrp, .text-wrp {
+  padding: 20rpx;
 }
 
-.product-item .image-wrp image {
-  width: 120px;
-  height: 120px;
-}
-
-.product-item .text-wrp {
-  width: 65%;
+.text-wrp {
   display: flex;
-  flex-flow: column nowrap;
-  margin-left: 20px;
+  flex-direction: column;
+}
+
+.image-wrp image{
+  width: 100px;
+  height: 100px;
 }

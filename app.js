@@ -1,3 +1,10 @@
+// LeanCloud 应用的 ID 和 Key
+const AV = require('./utils/av-weapp-min.js')
+AV.init({
+  appId: 'Dyio1KzspBKW1nFp9tS1AQ6E-gzGzoHsz',
+  appKey: 'J2ht0Wpxbt8IGtAWqKLl6jOw',
+});
+
 //app.js
 App({
   onLaunch: function() {
@@ -27,9 +34,3 @@ App({
     userInfo: null
   }
 })
-const AV = require('./libs/av-weapp-min.js');
-// LeanCloud 应用的 ID 和 Key
-AV.init({ 
- appId: 'Dyio1KzspBKW1nFp9tS1AQ6E-gzGzoHsz', 
- appKey: 'J2ht0Wpxbt8IGtAWqKLl6jOw', 
-});
